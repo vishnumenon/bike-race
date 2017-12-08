@@ -1,0 +1,49 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  z-index: 0;
+}
+
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 156, 0.3);
+}
+
+.logo {
+  height: 100px;
+  transform: translateY(-50px);
+  margin-top: -10px;
+}
+
+.content-box {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 40px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 32px;
+  box-shadow: 0 8px 6px -6px #000;
+  font-family: 'Average', serif;
+}
+
+.content-box > .content {
+  transform: translateY(-45px);
+}
