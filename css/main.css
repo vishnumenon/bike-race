@@ -235,3 +235,12 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   height: 100%;
   width: 100%;
 }
+
+@media (max-width: 680px) {
+  .mm-carousel-overlay-title {
+    font-size: 48px;
+  }
+  .hide-small {
+    display: none;
+  }
+}
