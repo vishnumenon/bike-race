@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Average', serif;
+  font-family: "Average", serif;
 }
 
 /* Nav Bar */
@@ -9,13 +10,13 @@ body, html {
 nav.mm-nav {
   z-index: 10;
   box-shadow: 0 8px 6px -6px #000;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   width: 100%;
   height: 92px;
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(-179deg, #0b275a 0%, #00103c 100%);
+  background: linear-gradient(-179deg, #423f70 0%, #282644 100%);
   overflow-y: visible;
   transition: height 0.5s;
 }
@@ -24,7 +25,9 @@ nav.mm-nav.shrunk {
   height: 60px;
 }
 
-.mm-nav-links-container, .mm-nav-links-row, .mm-nav-links {
+.mm-nav-links-container,
+.mm-nav-links-row,
+.mm-nav-links {
   height: 100%;
 }
 
@@ -40,6 +43,7 @@ nav.mm-nav.shrunk {
   text-align: center;
   justify-content: center;
   align-items: center;
+  color: #8683b6;
 }
 
 .mm-nav-links > a.mm-nav-link:hover {
@@ -80,45 +84,23 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .mm-carousel-image-1 {
-  background-image: url('../img/1.jpg');
+  background-image: url("../img/1.jpg");
 }
 
 .mm-carousel-image-2 {
-  background-image: url('../img/2.jpg');
+  background-image: url("../img/2.jpg");
 }
 
 .mm-carousel-image-3 {
-  background-image: url('../img/3.jpg');
+  background-image: url("../img/3.jpg");
 }
 
 .mm-carousel-image-4 {
-  background-image: url('../img/4.jpg');
-}
-
-.mm-carousel-button, .mm-carousel-button:active, .mm-carousel-button:focus {
-  font-size: 72px;
-  color: rgba(218, 218, 218, 0.8);
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 9;
-}
-
-.mm-carousel-button:hover {
-  color: #f7f7f7;
-}
-
-.mm-carousel-button.Wallop-buttonNext {
-  right: 20px;
-}
-
-.mm-carousel-button.Wallop-buttonPrevious {
-  left: 20px;
+  background-image: url("../img/4.jpg");
 }
 
 /* Carousel overlay */
@@ -130,12 +112,13 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 }
 
 .mm-carousel-overlay-title {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   background-color: rgba(0, 0, 0, 0.6);
   font-size: 72px;
   color: white;
   padding: 40px;
   padding-top: 72px;
+  text-align: center;
 }
 
 .mm-title-date {
@@ -144,7 +127,8 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 
 /* Call to Action */
 
-.mm-calls-to-action, .mm-bottom-links {
+.mm-calls-to-action,
+.mm-bottom-links {
   background-color: #212124;
   box-shadow: inset 0 0 10px #000000;
   width: 100%;
@@ -166,11 +150,16 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 }
 
 .mm-call-button {
-  background: linear-gradient(-179deg, #0b275a 0%, #00103c 100%);
+  display: block;
+  align-items: flex-start;
+  text-align: center;
+  padding: 1px 6px;
+  background: linear-gradient(-179deg, #423f70 0%, #282644 100%);
   box-shadow: 0 8px 6px -6px #000;
   border-radius: 10px;
   border: none;
   height: 124px;
+  line-height: 124px;
   width: 100%;
   margin: 50px 0px;
   color: white;
@@ -178,11 +167,16 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 }
 
 .mm-call-button:hover {
-  background: linear-gradient(-179deg, #09204a 0%, #00103c 100%);
+  background: linear-gradient(-179deg, #353259 0%, #181729 100%);
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .mm-call-button:active {
-  background: linear-gradient(-179deg, #07193c 0%, #00103c 100%);
+  background: linear-gradient(-179deg, #353259 0%, #181729 100%);
+  text-decoration: none;
+  color: white;
 }
 
 .mm-call-button:focus {
