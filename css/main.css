@@ -10,7 +10,7 @@ html {
 nav.mm-nav {
   z-index: 10;
   box-shadow: 0 8px 6px -6px #000;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Oswald", sans-serif;
   width: 100%;
   height: 92px;
   position: fixed;
@@ -80,9 +80,20 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   position: relative;
 }
 
+.mm-carousel-index-page {
+  position: relative;
+}
+
 .mm-carousel-image {
   width: 100%;
   height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mm-carousel-image-index-page {
+  width: 100%;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -103,7 +114,7 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   background-image: url("../img/4.jpg");
 }
 
-/* Carousel overlay */
+/* Carousel overlay - unused */
 .mm-carousel-overlay {
   position: absolute;
   top: 92px;
@@ -112,7 +123,7 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 }
 
 .mm-carousel-overlay-title {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.6);
   font-size: 72px;
   color: white;
@@ -121,8 +132,28 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   text-align: center;
 }
 
-.mm-title-date {
+.mm-index-title .mm-title-date {
   color: #e8ca00;
+}
+
+/* New index tile */
+.mm-index-title {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+  padding-top: 84px;
+  color: white;
+}
+
+.mm-index-title-container {
+  background-color: #212124;
+  box-shadow: inset 0 0 10px #000000;
+  width: 100%;
+}
+
+.mm-index-title-date {
+  font-weight: 100;
 }
 
 /* Call to Action */
@@ -141,7 +172,7 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 .mm-or {
   font-style: italic;
   font-size: 44px;
-  line-height: 224px;
+  line-height: 188px;
   color: white;
   text-align: center;
 }
@@ -161,7 +192,7 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   height: 124px;
   line-height: 124px;
   width: 100%;
-  margin: 50px 0px;
+  margin: 32px 0px;
   color: white;
   font-size: 42px;
 }
@@ -189,7 +220,15 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   text-align: center;
   font-size: 48px;
   font-weight: bold;
-  padding: 100px 0 40px 0;
+  padding: 48px 0 40px 0;
+}
+
+.book-row {
+  margin-top: 48px;
+}
+
+.book-row a {
+  font-weight: bold;
 }
 
 .mm-bottom-links {
@@ -237,9 +276,6 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 }
 
 @media (max-width: 680px) {
-  .mm-carousel-overlay-title {
-    font-size: 48px;
-  }
   .hide-small {
     display: none;
   }
