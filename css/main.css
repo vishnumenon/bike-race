@@ -93,7 +93,7 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 
 .mm-carousel-image-index-page {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -139,10 +139,10 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 /* New index tile */
 .mm-index-title {
   text-align: center;
-  font-size: 48px;
+  font-size: 64px;
   font-family: "Oswald", sans-serif;
   padding: 20px;
-  padding-top: 84px;
+  padding-top: 48px;
   color: white;
 }
 
@@ -153,7 +153,8 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 }
 
 .mm-index-title-date {
-  font-weight: 100;
+  display: block;
+  color: #e8ca00;
 }
 
 /* Call to Action */
@@ -172,7 +173,7 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 .mm-or {
   font-style: italic;
   font-size: 44px;
-  line-height: 188px;
+  line-height: 160px;
   color: white;
   text-align: center;
 }
@@ -189,8 +190,8 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   box-shadow: 0 8px 6px -6px #000;
   border-radius: 10px;
   border: none;
-  height: 124px;
-  line-height: 124px;
+  height: 96px;
+  line-height: 96px;
   width: 100%;
   margin: 32px 0px;
   color: white;
