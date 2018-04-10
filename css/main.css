@@ -43,12 +43,12 @@ nav.mm-nav.shrunk {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #8683b6;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .mm-nav-links > a.mm-nav-link:hover {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 1);
 }
 
 nav.mm-nav .mm-nav-links > a.mm-nav-brand {
@@ -157,6 +157,11 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
   color: #e8ca00;
 }
 
+.mm-index-title-address {
+  display: block;
+  font-size: 42px;
+}
+
 /* Call to Action */
 
 .mm-calls-to-action,
@@ -230,6 +235,16 @@ nav.mm-nav.shrunk .mm-nav-links > a.mm-nav-brand {
 
 .book-row a {
   font-weight: bold;
+}
+
+.info-blurb {
+  padding-top: 48px;
+  font-size: 28px;
+}
+
+.directions-blurb {
+  padding-top: 16px;
+  font-size: 28px;
 }
 
 .mm-bottom-links {

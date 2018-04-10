@@ -47,3 +47,13 @@ html {
 .photo-gallery {
   padding-left: 0;
 }
+
+.sponsors {
+  text-align: center;
+  font-size: 30px;
+}
+
+.sponsor-image {
+  width: 30%;
+  margin: 30px 30px;
+}
