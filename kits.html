@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/css/wallop--fade.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/js/Wallop.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.bsPhotoGallery.js"></script>
+    <link rel="stylesheet" href="css/jquery.bsPhotoGallery.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/non-main.css" />
   </head>
@@ -52,20 +55,24 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-offset-1 col-md-10 mm-carousel-content-overlay">
-            <h1> Race Info </h1>
-            The Duke Multiple Myeloma Bike Ride is a 25K or 50 K or 100 K road bike ride from the Duke campus through rural Durham and Orange Counties. Your registration fee will help support the families and patients undergoing treatment at the Multiple Myeloma Center at Duke as well as to support research against this disease. These three rides will start in front of Duke Hospital North Pavilion 2400 Pratt Street, Durham 27705 and tour through rural Durham and Orange Counties before returning to Duke. The terrain is typical for the Piedmont area of North Carolina. The roads wind through forests and farms with short but frequent rolling hills. The 100 K route continues on into rural Orange County before returning to Duke. The 50 K and 100 K rides will begin at 8 am, the 25K ride will begin at 9 am. All three routes  will stay open until 3 pm. There will be rest stops and SAG vans throughout the routes.
-            <br />
-            <br />
-          <h1>  Directions </h1>
-Duke University Hospital
-<br />
-North Pavilion
-<br />
-2400 Pratt Street
-<br />
-Durham, NC 277058
-<br />
-<a href="http://map.duke.edu/building/207">http://map.duke.edu/building/207</a>
+            <h1> Kits </h1>
+            <ul class="photo-gallery">
+            <li class="gallery-item"><img src="./img/photos/kit1.png" /></li>
+            <li class="gallery-item"><img src="./img/photos/kit2.png" /></li>
+            <li class="gallery-item"><img src="./img/photos/kit3.png" /></li>
+            <li class="gallery-item"><img src="./img/photos/kit4.png" /></li>
+            </ul>
+            <div style="clear: both; padding: 16px 0;">
+            If you are interested in purchasing a Duke Multiple Myeloma Bike Ride cycling kit, we will have a limited number of both men’s and women’s of all sizes available at the event. If we no longer have your size or would like to purchase a kit after the event, you may do so from the Hincapie Sportswear website. Please note that our store will close on June 24th at 11:59PM ET.  Sizing information is available at the website link to our online store.  If you would like to purchase a kit online, please follow the steps below:
+          </div>
+            <ol>
+              <li>Follow the link provided here: <a href="https://order.hincapiecustom.com/DMMBR">https://order.hincapiecustom.com/DMMBR</a></li>
+              <li>If this is your first time ordering with Hincapie Sportswear, click on “Create Your Account Now.”</li>
+              <li>If you have ordered with us before, click the “Log On” icon in the top right corner of your screen.</li>
+              <li>Shop and add any items to your cart that you would like to order.</li>
+              <li>Once you have selected everything you would like to order, click on your cart then click “Continue.”</li>
+              <li>Double check to make sure that your billing address and shipping address is correct. <b> Please note that Hincapie CANNOT ship to a PO Box and a signature WILL be required upon delivery.</b></li>
+              <li>Click “Continue” to proceed through the checkout process.</li>
           </div>
         </div>
       </div>
@@ -74,5 +81,11 @@ Durham, NC 277058
     </script>
     <script src="js/index.js">
     </script>
+    <script>
+    $("ul.photo-gallery").bsPhotoGallery({
+  classes: "col-xs-3",
+  hasModal: true
+});
+</script>
   </body>
 </html>
